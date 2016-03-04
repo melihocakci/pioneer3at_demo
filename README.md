@@ -1,6 +1,10 @@
 # Ros Gazebo Multi Robot Tutorial
-This program modified by Yildiz Team to demostrate the creation of multiple robots for RoboCup  Virtual Robot Competition. This code is tested by using a Gazebo5 server.
-In case of any problem please contact sirmayavuz@gmail.com
+This program modified by Yildiz Team (Erkan Uslu, Furkan Cakmak, Muhamet Balcilar, Fatih Amasyali, Sirma Yavuz) to demostrate the creation of multiple robots for RoboCup  Virtual Robot Competition. This code is tested by using a Gazebo5 server.
+In case of any problem please contact 
+
+uslu.erkan@gmail.com
+furca609@gmail.com
+muhammetbalcilar@gmail.com
 
 # Server Side:
 * Clone repository to your workspace
@@ -52,4 +56,4 @@ rostopic list
 ```
 You should be able to see the topic list.
 
-* dOpen Rviz and add relevant topics
+* Open Rviz and add relevant topics
