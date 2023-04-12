@@ -21,7 +21,7 @@ int main(int argc, char **argv)
   msg.linear.x = 1.0;
 
   // Subscribe to the /hokuyo laser topic
-  ros::Subscriber sub = nh.subscribe("/hokuyo", 1000, cb);
+  ros::Subscriber sub = nh.subscribe("/scan", 1000, cb);
 
   ros::Rate rate(20);
 

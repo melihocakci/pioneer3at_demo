@@ -34,30 +34,14 @@
 -->
   <!-- Launch robocup2012_rvrl_pre1 -->
   <node name="gazebo" pkg="gazebo_ros" type="gzserver" respawn="false"
-    output="screen" args="$(find p3at_gazebo)/worlds/robocup2012_rvrl_pre1.world" /> 
+    output="screen" args="$(find hector_nist_arena_worlds)/worlds/erkam_exp1.world" /> 
 
   <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen"/>
 
   <include file="$(find p3at_description)/launch/spawn_p3at.launch">
     <arg name="robot_name" value="robot0"/>
-    <arg name="pose_args" value="-x -52 -y 18"/> 
+    <arg name="pose_args" value="-x -1.2 -y -9.6 -z 0.5"/> 
   </include>
-
-  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
-    <arg name="robot_name" value="robot1"/>
-    <arg name="pose_args" value="-x 2.07 -y -38.2"/> 
-  </include>
-
-  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
-    <arg name="robot_name" value="robot2"/>
-    <arg name="pose_args" value="-x -0.2 -y 76"/> 
-  </include>
-
-  <include file="$(find p3at_description)/launch/spawn_p3at.launch">
-    <arg name="robot_name" value="robot3"/>
-    <arg name="pose_args" value="-x 47.9 -y 29.3"/> 
-  </include>
-
 
 
 
