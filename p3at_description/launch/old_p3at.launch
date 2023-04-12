@@ -21,7 +21,7 @@ output="screen" args="$(find p3at_gazebo)/worlds/p3at.world" />
 
 <node  pkg="gazebo_ros" type="spawn_model" name="spawn_model" args="-urdf -param /robot_description -model pioneer3at -x 0 -y 0 -z 1.0" />
 
-<node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher"/>
+<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
 
 
 
@@ -32,14 +32,14 @@ output="screen" args="$(find p3at_gazebo)/worlds/p3at.world" />
 
 <node  pkg="gazebo_ros" type="spawn_model" name="spawn_model" args="-urdf -param /robot_description -model pioneer3at -x 0 -y 0 -z 1.0" />
 
-<node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher"/>-->
+<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>-->
 
 
 <param name="robot_description2" command="$(find xacro)/xacro '$(find p3at_description)/urdf/pioneer3at2.urdf.xacro'" />
 
 <node  pkg="gazebo_ros" type="spawn_model" name="spawn_model" args="-urdf -param /robot_description2 -model pioneer3at -x 10 -y 0 -z 1.0" />
 
-<node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher"/>
+<node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher"/>
 
 
 
