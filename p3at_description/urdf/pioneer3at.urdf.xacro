@@ -22,7 +22,7 @@
   <xacro:asus_camera name="camera" parent="base_link">
 	<!-- <origin xyz="0.065 0.0 0.53" rpy="0.52359877559 0 0"/> -->
 	<!-- camera 30 derece yamuk takilirsa FC-->
-	<origin xyz="0.065 0.0 0.53" rpy="0 0 0"/> <!-- 30 -> 0.52359877559 45-> 0.7854 -->
+	<origin xyz="0.065 0.0 0.53" rpy="0 52359877559 0"/> <!-- 30 -> 0.52359877559 45-> 0.7854 -->
   </xacro:asus_camera>  
   <xacro:imu name="imu_link" parent="base_link" topic="imu_data">
   </xacro:imu> 
